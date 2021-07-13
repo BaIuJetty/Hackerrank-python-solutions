@@ -1,0 +1,83 @@
+Python - Get Additional Info
+
+ 
+
+Define a function called `docstring` which takes one parameter. The parameter 'function-name' is a Python built-in function name. The function definition code stub is given in the editor. Generate a Docstring of the input function based on the condition given below:
+
+ 
+
+The Docstring must give the maximum information about the function.
+ 
+
+ 
+
+Constraints
+
+Input must be a string.
+
+Input Format Format for Custom Testing
+
+ 
+
+In the input, any python built-in function is given as a string.
+ 
+
+ 
+
+Sample Case 0
+
+ 
+
+Sample Input
+
+STDIN      Function
+-----      --------
+print   →  functionname = print
+Sample Output:
+
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+    
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.
+Explanation
+
+The function name print is passed as a parameter which generates the output.
+
+
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'docstring' function below.
+#
+# The function is expected to output a STRING.
+# The function accepts STRING x as a parameter.
+#
+
+def docstring(functionname):
+    # Write your code here
+
+if __name__ == '__main__':
+
+    x = input()
+    docstring(x)
+
+Answer :
+
+help(functionname)
